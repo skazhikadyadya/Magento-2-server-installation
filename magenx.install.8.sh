@@ -581,7 +581,7 @@ if [ "${repo_percona_install}" == "y" ];then
               long_progress &
               pid="$!"
 	      dnf module disable -y mysql >/dev/null 2>&1
-	      percona-release setup ps56 -y >/dev/null 2>&1
+	      percona-release setup ps57 -y >/dev/null 2>&1
               dnf install -y percona-server-server percona-server-client >/dev/null 2>&1
               stop_progress "$pid"
               rpm  --quiet -q percona-server-server percona-server-client
